@@ -1,6 +1,6 @@
 # iphopper 
 
-Install brew if you already haven't 
+Install homebrew if you already haven't 
 
 Afterwards,
 ```
