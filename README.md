@@ -23,6 +23,12 @@ ControlPort 9051
 ```
 HashedControlPassword (*your passwords hash*)
 ```
+You might want to add this to torrc file if the exit node isn't changing
+```
+SocksPort 9150 NoIsolateSOCKSAuth
+```
+It disables the automatic IP change over browser tab if you're using the tor browser, ignore this if you're not using the tor browser.
+
 Although sometimes you might want to authenticate with a cookie file, then
 
 it's important to notice that authentication is done via either a cookie file, password, or none. In that case, replace HashedControlPassword with
