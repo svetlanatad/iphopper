@@ -23,6 +23,17 @@ ControlPort 9051
 ```
 HashedControlPassword (*your passwords hash*)
 ```
+Although sometimes you might want to authenticate with a cookie file, then
+
+it's important to notice that authentication is done via either a cookie file, password, or none. In that case, replace HashedControlPassword with
+```
+CookieAuthentication 1
+```
+Afterwards, locate your cookie file. In linux based systems, it's usually in
+```
+/var/lib/tor/control_auth_cookie
+```
+And modify the attached newscript file to work accordingly. 
 (*update notice*) The script works slow, but it is possible to accelerate it by setting automatic circuit renewal time by a high value. If so, add
 
 ```
