@@ -23,6 +23,15 @@ ControlPort 9051
 ```
 HashedControlPassword (*your passwords hash*)
 ```
+(*update notice*) The script works slow, but it is possible to accelerate it by setting automatic circuit renewal time by a high value. If so, add
+
+```
+MaxCircuitDirtiness <time in seconds>
+```
+(*update notice*) I am trying to see if it's possible to disable automatic circuit renewal and let the script handle it. 
+
+
+
 Now, time to set up a password. Here, you will probably have issues if your password is too simple and too short, make sure you come up with a secure password. Time to hash it with
 
 ```
